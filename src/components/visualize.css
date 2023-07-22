@@ -1,0 +1,166 @@
+.visualize_wrapper{
+    z-index: 10;
+    display:flex;
+    width:100vw;
+    height:100vh;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.visualize_content{
+    z-index: 10;
+    display:flex;
+    width:100vw;
+    height:100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.board_section_V{
+    z-index: 10;
+    width:65%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.log_section{
+    z-index: 10;
+    width:500px;
+    height:600px;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #ebe8d6;
+}
+
+.log_header{
+    z-index: 10;
+    width: 100%;
+    height: 15%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Ubuntu Mono";
+    font-size: 1.5rem;
+    color: #ebe8d6;
+    background-color: #3d723d;
+    box-shadow: 0px 3px 3px 1px #00000047;
+}
+
+.log_content{
+    overflow: auto;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
+.log_content::-webkit-scrollbar {
+    display: none;
+  }
+
+.board_wrapper_V{
+    width:100%;
+    z-index: 10;
+}
+
+.row_V {
+    display: flex;
+    z-index: 10;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+}
+  
+.box_V {
+    width: 60px;
+    height: 60px;
+    z-index: 10;
+}
+  
+.green_V {
+    background-color: #3d723d;
+}
+  
+.white_V {
+    background-color: #ebe8d6;
+}
+
+.queen{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%
+}
+._Queen{
+    font-size: 1.5rem;
+}
+
+@media (max-width:600px){
+
+
+
+    .visualize_content{
+        flex-direction: column !important;
+        justify-content: flex-start !important;
+        /* padding-top: 3rem; */
+    }
+    .board_section_V{
+        width:90% !important;
+        margin:2rem!important
+    }
+      
+    .box_V {
+        width: 9.7vw !important;
+        height: 10vw !important;
+    }
+          
+    ._Queen{
+        font-size: 1.25rem !important;
+    }
+
+    .log_section{
+        z-index: 10 !important;
+        width:90vw !important;
+        height:500px !important;
+    }
+    
+    .log_header{
+        font-size: 1.75rem !important;
+    }
+}
+
+@media (max-width:945px) {
+    .box_V {
+        width: 8vw;
+        height: 8vw;
+    }
+          
+    ._Queen{
+        font-size: 1.75rem;
+    }
+    .board_section_V{
+        width:90%;
+        margin:2rem
+    }
+    .visualize_content{
+        flex-direction: column;
+        justify-content: flex-start;
+        /* padding-top: 3rem; */
+    }
+
+    .log_section{
+        z-index: 10;
+        width:60vw;
+    }
+    
+    .log_header{
+        font-size: 2rem;
+    }
+    .log_content{
+        font-size: 1rem;
+    }
+
+}

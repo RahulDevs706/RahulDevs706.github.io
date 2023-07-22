@@ -1,0 +1,21 @@
+.card_wrapper{
+    z-index: 10;
+    padding:0.5rem 1rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.25rem;
+}
+
+.failed_C{
+    color: #8f0000;
+    background-color: #d19090;
+}
+
+
+.success_C{
+    color: #007a00;
+    background-color: rgb(106 180 106 / 35%);
+}
+
+.card_wrapper p{
+    padding: 0;
+}
