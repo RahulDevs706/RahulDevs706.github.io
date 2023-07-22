@@ -24,7 +24,6 @@ const Visualize = () => {
         const ldiag = Array.from({ length: 2 * n - 1 }, () => 0);
         const rdiag = Array.from({ length: 2 * n - 1 }, () => 0);
 
-      console.log(rowsCheck);
         const solve = async (col) => {
           if (col===Number(n)) {
             setZ(n);
@@ -80,8 +79,6 @@ const Visualize = () => {
         
         
       }, [dimension, dispatch]); 
-
-          console.log(logData);
 
           if(s===dimension){
             let data ={

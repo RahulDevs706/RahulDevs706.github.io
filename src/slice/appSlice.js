@@ -14,8 +14,6 @@ export const appSlice = createSlice({
         const j = action.payload.j;
 
 
-        // console.log(action.payload);
-
         const {board} = state;
 
 
@@ -47,7 +45,6 @@ export const appSlice = createSlice({
 
           newBoard.push(row);
         }
-        console.log(newBoard);
         return{
             dimension:dim,
             board:newBoard,
